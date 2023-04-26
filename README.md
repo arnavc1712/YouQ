@@ -1,4 +1,7 @@
-# YouQ
+
+# YouQ 
+![youq-logo](./assets/image-128.png "YouQ Logo")
+
 Chrome Extension for YouQ -> [Go To Chrome Extension](https://chrome.google.com/webstore/detail/youq/iglnkjmjhjooehikpgjkokbibndafcbl?hl=en)
 
 
