@@ -1,0 +1,77 @@
+.popup {
+    background-color: #121212;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 300px;
+    text-align: center;
+  }
+  
+  h2 {
+    font-size: 24px;
+    margin-top: 0;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  input[type="text"] {
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    background-color: #1f1f1f;
+    color: #fff;
+  }
+  
+  button {
+    border: none;
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #3e8e41;
+  }
+  
+  /* Material Design Ripple Effect */
+  button {
+    overflow: hidden;
+    position: relative;
+  }
+  
+  button:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.4);
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform 0.3s ease-out;
+  }
+  
+  button:active:after {
+    transform: translate(-50%, -50%) scale(30);
+    opacity: 0;
+  }
+
+#success {
+    color: #fff;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}

@@ -1,0 +1,32 @@
+{
+  "manifest_version": 3,
+  "name": "YouQ",
+  "description": "YouQ answers questions about the video you are watching and provides additional context in order to help you understand it better",
+  "version": "1.0",
+  "content_scripts": [
+    {
+    "js": ["content/content.js"],
+    "css": ["templates/content.css"],
+    "matches": ["https://www.youtube.com/*"]
+    }
+  ],
+  "action": {
+    "default_popup": "popup/popup.html"
+  },
+  "web_accessible_resources": [
+    {
+      "matches": ["https://www.youtube.com/*"],
+      "resources": ["templates/content.html", "templates/content.css"]
+    }
+  ],
+  "background": {
+    "service_worker": "background/background.js"
+  },
+  "permissions": ["tabs", "webNavigation", "storage"],
+  "icons": {
+    "16": "images/image-16.png",
+    "32": "images/image-32.png",
+    "48": "images/image-48.png",
+    "128": "images/image-128.png"
+  }
+}

@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+/* Colors */
+:root {
+  --primary-color: #2196F3;
+  --dark-gray: #424242;
+  --light-gray: #f2f2f2;
+}
+
+/* Global Styles */
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  height: 100%;
+  background-color: #f2f2f2;
+}
+
+/* Chatbot Styles */
+.chatbot-container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 300px;
+    background-color: var(--dark-gray);
+    color: #ffffff;
+    z-index: 99999;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .chatbot-header {
+    height: 50px;
+    background-color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .chatbot-header h3 {
+    margin: 0;
+  }
+  
+  .chatbot-messages {
+    flex: 1;
+    overflow-y: auto;
+    padding: 10px;
+  }
+  
+  .message {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 10px;
+    max-width: 80%;
+  }
+  
+  .user-message {
+    align-items: flex-end;
+  }
+  
+  .message-text {
+    padding: 5px;
+    border-radius: 5px;
+    word-wrap: break-word;
+  }
+  
+  .bot-message .message-text {
+    background-color: var(--light-gray);
+    color: #000000;
+  }
+  
+  .user-message .message-text {
+    background-color: var(--primary-color);
+    color: #ffffff;
+  }
+  
+  .chatbot-input {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: var(--dark-gray);
+  }
+  
+  .chatbot-input input[type="text"] {
+    background-color: transparent;
+    color: #ffffff;
+    border: none;
+    border-bottom: 2px solid #ffffff;
+    padding: 5px;
+    margin-right: 10px;
+    flex: 1;
+    max-width: 80%;
+  }
+  
+  .chatbot-input button {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+  }  
